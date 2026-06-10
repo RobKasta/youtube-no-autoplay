@@ -35,7 +35,7 @@ The extension listens for the browser's native `play` event on YouTube video pag
 ## Privacy
 
 This extension collects nothing. The only data stored locally is whether the toggle is on or off.  
-→ [Full privacy policy](https://robkasta.github.io/youtube-no-autoplay/privacy-policy.html)
+→ [Full privacy policy](https://robkasta.github.io/youtube-no-autoplay/)
 
 ## License
 
