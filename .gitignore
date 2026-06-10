@@ -1,0 +1,5 @@
+# Generated store assets (rebuild with build_store_assets.py)
+store/*.zip
+store/*.png
+__pycache__/
+.DS_Store

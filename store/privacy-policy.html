@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube No Autoplay — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: #0f0f0f;
+      color: #e8e8e8;
+      line-height: 1.7;
+      padding: 0 16px 80px;
+    }
+
+    /* ── Header ── */
+    header {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 0 40px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      border-bottom: 1px solid #222;
+    }
+
+    .bear {
+      font-size: 52px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 14px;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    /* ── Content ── */
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Short & sweet pledge at the top */
+    .pledge {
+      background: #1a1a1a;
+      border-left: 4px solid #c00;
+      border-radius: 0 10px 10px 0;
+      padding: 24px 28px;
+      margin: 40px 0;
+    }
+
+    .pledge p {
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      line-height: 1.5;
+    }
+
+    /* Fact cards */
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 36px 0;
+    }
+
+    @media (max-width: 520px) { .cards { grid-template-columns: 1fr; } }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 20px 22px;
+    }
+
+    .card .icon { font-size: 28px; margin-bottom: 10px; }
+    .card h3   { font-size: 15px; font-weight: 600; color: #fff; margin-bottom: 6px; }
+    .card p    { font-size: 13px; color: #aaa; }
+
+    /* Sections */
+    section { margin-top: 44px; }
+
+    section h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+
+    section p, section li {
+      font-size: 15px;
+      color: #bbb;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+
+    /* Source code link */
+    .source {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 14px;
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-size: 14px;
+      color: #c00;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .source:hover { background: #222; }
+
+    /* Footer */
+    footer {
+      max-width: 680px;
+      margin: 60px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid #222;
+      font-size: 13px;
+      color: #555;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="bear">🐻‍❄️</div>
+  <div>
+    <h1>YouTube No Autoplay</h1>
+    <p>Privacy Policy &amp; Terms of Use</p>
+  </div>
+</header>
+
+<main>
+
+  <div class="pledge">
+    <p>
+      This extension is a free gift — no strings attached, no hidden agenda,
+      no business model. It does exactly one thing: stops YouTube from playing
+      videos without your permission.
+    </p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">🚫</div>
+      <h3>No data collected</h3>
+      <p>We collect nothing. Zero. Not your watch history, not the URLs you visit, not your IP address.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📡</div>
+      <h3>No network requests</h3>
+      <p>The extension never contacts any server — not ours, not anyone's. It has no server to contact.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💾</div>
+      <h3>One local setting only</h3>
+      <p>The only thing stored on your device is whether the extension is enabled or disabled (on/off toggle).</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">👁</div>
+      <h3>Cannot see what you watch</h3>
+      <p>The extension has no access to tab URLs, your browsing history, cookies, or any page content.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">💰</div>
+      <h3>Completely free</h3>
+      <p>Free to install, free to use, free forever. No premium tier, no donations asked, no ads.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔓</div>
+      <h3>Open source</h3>
+      <p>Every line of code is readable. You don't have to trust us — you can verify it yourself.</p>
+    </div>
+
+  </div>
+
+  <!-- ── How it works ── -->
+  <section>
+    <h2>How it actually works</h2>
+    <p>
+      When you open a YouTube video tab, the extension listens for the browser's
+      native <code style="background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:13px;">play</code>
+      event. If that event fires without a real user interaction (a click or
+      keypress on your part), the extension immediately pauses the video — nothing
+      more, nothing less.
+    </p>
+    <p style="margin-top:12px;">
+      It does not read the video title, the video ID, the channel name, or
+      anything else on the page. It simply detects "did the user trigger this?"
+      and acts accordingly.
+    </p>
+  </section>
+
+  <!-- ── Permissions ── -->
+  <section>
+    <h2>Why the "Storage" permission?</h2>
+    <p>
+      Chrome requires the <strong style="color:#fff">storage</strong> permission
+      for extensions to remember a setting between browser sessions.
+      We use it for exactly that: saving whether you've switched the extension
+      on or off in the toolbar popup. That's the entirety of its use.
+    </p>
+  </section>
+
+  <!-- ── Open source ── -->
+  <section>
+    <h2>Read the source code</h2>
+    <p>
+      The extension is fewer than 30 lines of JavaScript. You can read every
+      line on GitHub and confirm for yourself that there is nothing unexpected.
+    </p>
+    <a class="source" href="https://github.com/RobKasta/youtube-no-autoplay" target="_blank" rel="noopener">
+      ⌥ View source on GitHub
+    </a>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section>
+    <h2>Questions?</h2>
+    <p>
+      If something feels off, open an issue on GitHub. There's no support
+      email or company behind this — just a developer who got tired of videos
+      auto-playing when switching between devices, and figured others might too.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <span>YouTube No Autoplay — made with ❤️ and offered freely</span>
+  <span>Last updated: June 2026</span>
+</footer>
+
+</body>
+</html>
